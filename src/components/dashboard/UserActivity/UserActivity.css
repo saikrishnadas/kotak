@@ -1,0 +1,50 @@
+.activity-user {
+    display: flex;
+    justify-content: space-between;
+  }
+  .activity-user .md {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .activity-user .user-count-status .user-label {
+    color: #a3aed0;
+    margin-bottom: 5px;
+  }
+  .activity-user .user-count-status .user-set {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b3674;
+  }
+  .activity-user .user-count-status .user-set .active-user {
+    color: #a3aed0;
+    margin-left: 11px;
+  }
+  .activity-user .value-indicator {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a3aed0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .activity-user .indicator-value {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #05cd99;
+    align-items: center;
+    gap: 5px;
+  }
+  .activity-user .indicator-value .indicator-icon {
+    width: 9px;
+    height: 10px;
+  }
+  .bar-chart-activity-holder {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px 0px 23px;
+    width: 100%;
+  }
+  

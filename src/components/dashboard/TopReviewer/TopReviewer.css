@@ -1,0 +1,69 @@
+.reviewer-table {
+  overflow: auto;
+}
+
+.reviewer-table .styled-table {
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.reviewer-table .styled-table th {
+  color: #a3aed0;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  white-space: pre;
+}
+
+.reviewer-table .styled-table th,
+.reviewer-table .styled-table td {
+  padding: 12px 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.reviewer-table .user-name {
+  max-width: 200px;
+  width: 200px;
+}
+
+.reviewer-table .reviewed {
+  width: 100px;
+}
+
+.reviewer-table .rating {
+  width: 150px;
+}
+
+.reviewer-table .rating-bar {
+  height: 8px;
+  background-color: #a3aed0;
+  border-radius: 4px;
+}
+
+.reviewer-overview-holder {
+  flex-direction: column;
+  max-height: 200px;
+}
+
+.table-button-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 18px 0px 15px 15px;
+}
+
+.table-main-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b3674;
+}
+
+.table-change-button {
+  border-radius: 10px;
+  border: 1px solid #d1e5fa;
+  padding: 8px 26px;
+  font-size: 14px;
+  color: #2b3674;
+}

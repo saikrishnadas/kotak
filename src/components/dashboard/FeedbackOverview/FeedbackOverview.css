@@ -1,0 +1,82 @@
+.feedback-table {
+  overflow: auto;
+}
+
+.feedback-table .styled-table {
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.feedback-table .styled-table th {
+  color: #a3aed0;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  white-space: pre;
+}
+
+.feedback-table .styled-table th,
+.feedback-table .styled-table td {
+  padding: 12px 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.feedback-table .doc-name {
+  max-width: 200px;
+  width: 200px;
+}
+
+.feedback-table .doc-date {
+  width: 100px;
+}
+
+.feedback-table .doc-desc {
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+  max-width: 300px;
+}
+
+.feedback-overview-holder {
+  flex-direction: column;
+}
+
+.table-button-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 18px 0px 15px 15px;
+}
+
+.table-main-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b3674;
+}
+
+.table-change-button {
+  border-radius: 10px;
+  border: 1px solid #d1e5fa;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.table-change-button .circle-dot-icon {
+  width: 16px;
+  height: 5px;
+}
+
+thead{
+  text-align: left;
+}
+
+.db-body{
+  font-size: 14px;
+}

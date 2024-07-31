@@ -1,0 +1,119 @@
+.card-pie-chart .pie-chart-wrapper {
+  border-radius: 16px 0px 0px;
+  border: 1px solid #d1e5fa;
+  background-color: #f4f7fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px;
+}
+
+.card-pie-chart .chart-header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2b3674;
+}
+
+.card-pie-chart .header-dropdown {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.app-btn{
+  background-color: #FFF;
+}
+
+.card-pie-chart .dropdown-selector {
+  padding: 9px;
+  border-radius: 10px;
+  border: 1px solid #d1e5fa;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #a3aed0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-pie-chart .dropdown-selector .drop-arrow-icon {
+  width: 8px;
+  height: 5px;
+  position: relative;
+  top: 1px;
+}
+
+.card-pie-chart .cost-value-holder {
+  width: fit-content;
+  border-radius: 15px;
+  height:5em;
+  padding: 5px 50px 5px 50px;
+  background-color: white;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.card-pie-chart .cost-value-holder .all-usage .value-header,
+.card-pie-chart .cost-value-holder .storage .value-header,
+.card-pie-chart .cost-value-holder .others .value-header {
+  position: relative;
+}
+
+.card-pie-chart .cost-value-holder .all-usage .value-header::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #00366f;
+  border-radius: 50%;
+  top: 4px;
+  left: -11px;
+}
+
+.card-pie-chart .cost-value-holder .storage .value-header::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #e41b23;
+  border-radius: 50%;
+  top: 4px;
+  left: -11px;
+}
+
+.card-pie-chart .cost-value-holder .others .value-header::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #c6e3f4;
+  border-radius: 50%;
+  top: 4px;
+  left: -11px;
+}
+
+.card-pie-chart .cost-value-holder .value-header {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #a3aed0;
+  margin-bottom: 3px;
+}
+
+.card-pie-chart .cost-value-holder .value-count {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #2b3674;
+}
+
+.card-pie-chart .pie-chart-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

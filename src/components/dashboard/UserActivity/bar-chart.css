@@ -1,0 +1,35 @@
+.activity-wrapper {
+  width: 100%;
+  flex: 1 1;
+  height: 100%;
+  display: flex;
+}
+
+.activity-wrapper .month-token {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-wrapper .month-token .month-wrapper {
+  width: fit-content;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1e5fa;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #a3aed0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.activity-wrapper .month-token .calendar-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.activity-wrapper .tick-selection .tick-circle-icon {
+  width: 11px;
+  height: 11px;
+}
