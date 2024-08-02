@@ -1,4 +1,4 @@
-.document-list {
+.document-list-chat {
   width: 30%;
   padding: 20px;
   background-color: #ffffff;
@@ -22,7 +22,7 @@
   color: #003874;
 }
 
-.document-list-header {
+.document-list-chat-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@
   margin-bottom: 20px;
 }
 
-.document-list-header p {
+.document-list-chat-header p {
   margin: 0;
   font-size: 12px;
   font-weight: 400;
@@ -42,6 +42,7 @@
 
 .header-icon {
   font-size: 24px;
+  cursor: pointer;
 }
 
 .document-item {

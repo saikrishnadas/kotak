@@ -1,0 +1,50 @@
+.document-review-header {
+    background-color: #003874;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .document-review-header h1 {
+    margin: 0;
+  }
+  
+  .document-review-header p {
+    margin: 5px 0 0 0;
+    font-size: 10px;
+    color:#D1E5FA;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .start-chat-btn,
+  .dismiss-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .start-chat-btn {
+    background-color: #FDFDFD;
+    color: #003874;
+  }
+  
+  .dismiss-btn {
+    background-color: #003874;
+    color: white;
+    border: 1px solid #FDFDFD;
+  }
+  
+  .selected-docs{
+    background-color: #D6EFF5;
+    padding:5px 10px;
+    margin-right:10px;
+    border-radius: 20px;
+  }

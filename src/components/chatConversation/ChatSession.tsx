@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { FaFilePdf, FaPlus, FaTimes, FaUserCircle, FaPaperPlane, FaSyncAlt, FaEllipsisH, FaArrowRight, FaThumbsUp,FaThumbsDown } from 'react-icons/fa';
 import './ChatSession.css';
+import FeedbackModal from '../modals/FeedbackModal';
 
 const ChatSession: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section className="chat-session">
       <header className="chat-header">
@@ -49,7 +51,7 @@ const ChatSession: React.FC = () => {
           </div>
           <div className='response-side-icons-container'>
           <FaThumbsUp className="response-side-icons" />
-          <FaThumbsDown className="response-side-icons" />
+          <FaThumbsDown className="response-side-icons" onClick={() => setIsModalOpen(true)}/>
           <div style={{width:"200px",height:"2px",backgroundColor:"#e0e0e0"}}/>
           </div>
         </div>
@@ -114,6 +116,7 @@ const ChatSession: React.FC = () => {
           <FaPaperPlane className="icon" />
         </button>
       </footer>
+      {isModalOpen && <FeedbackModal />}
     </section>
   );
 };

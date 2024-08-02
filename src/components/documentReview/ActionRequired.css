@@ -1,0 +1,33 @@
+.action-required {
+  width: 36%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
+  position: absolute; /* Positioning absolute to overlap the content */
+  top: 32%;
+  left: 40%;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensuring the popup is on top */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for better visibility */
+}
+
+.action-required FaExclamationCircle {
+  font-size: 24px;
+  color: #ff5f5f;
+}
+
+.action-required strong{
+  font-weight: 600;
+  color: #003874;
+}
+
+.action-required div{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}

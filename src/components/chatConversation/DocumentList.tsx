@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaRegCommentDots,FaFilePdf,FaPlus,FaEllipsisH } from 'react-icons/fa';
 import './DocumentList.css';
+import {useDocumentStore} from "@/store"
 
 const documents = [
   { title: 'Policy Terms and Conditions', lastAccessed: '12:34 PM, July 4', interactions: 10, hasAttachment: true },
@@ -11,14 +12,15 @@ const documents = [
 ];
 
 const DocumentList: React.FC = () => {
+  const openDocumentReview = useDocumentStore(state => state.openDocumentReview);
   return (
-    <aside className="document-list">
-      <header className="document-list-header">
+    <aside className="document-list-chat">
+      <header className="document-list-chat-header">
         <div>
           <h2>New Document Chat</h2>
           <p>Start a chat session</p>
         </div>
-        <FaRegCommentDots className="header-icon" />
+        <FaRegCommentDots className="header-icon" onClick={openDocumentReview}/>
       </header>
       <ul>
         {documents.map((doc, index) => (
