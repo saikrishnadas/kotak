@@ -1,0 +1,176 @@
+.file-managment-document-table {
+    margin-top: 20px;
+    width: 100%;
+    height:92vh;
+    overflow: scroll;
+    margin-right:20px;
+  }
+  
+  .file-managment-document-table.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .file-managment-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .file-managment-header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .file-managment-header-left h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #003874;
+  }
+  
+  .file-managment-more-options-btn {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #003874;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  .file-managment-tags {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .file-managment-tag {
+    background-color: #e9effd;
+    color: #003874;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .file-managment-header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .file-managment-search-icon {
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
+  .file-managment-header-right input {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  table th {
+    background-color: #f9fafb;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .file-managment-table-row {
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  .file-management-table-row:hover {
+    background-color: #f1f5f9;
+  }
+  .file-management-document-size {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .file-management-action-buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .file-management-action-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .file-managment-action-buttons div{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .file-management-action-btn-review {
+    background-color: transparent;
+    color: #003874;
+    border: 1px solid #003874;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  
+  }
+  
+  .file-management-pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .file-management-page-btn {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+  
+  .file-management-page-btn:disabled {
+    cursor: not-allowed;
+  }
+  
+  .file-management-page-btn.active {
+    background-color: #005fcc;
+    color: #ffffff;
+    border-color: #005fcc;
+  }
+
+  .upload-button {
+    display: flex;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #003874;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

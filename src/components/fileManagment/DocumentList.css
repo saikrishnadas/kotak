@@ -1,0 +1,106 @@
+.file-management-add-new {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:10px;
+    width: 100px;
+    margin-right: 20px;
+    padding: 20px 20px 10px 10px;
+    border-radius: 10px;
+    background-color: #EEF5FC;
+    border: 1px solid #6CA0D7;
+    cursor: pointer;
+}
+
+.file-management-add-new p{
+    color: #003874
+  }
+
+.file-management-add-new input{
+  max-width: 90px;
+  padding: 5px;
+  background-color: #EFEFEF;
+  border: 1px solid #E2E8F0;
+  border-radius: 5px;
+ }
+
+ .file-management-add-new button{
+  background-color: #D1E5FA;
+  color: #003874;
+  border: none;
+  padding:6px;
+  border-radius: 10px;
+ }
+
+.file-management-documents{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+    height:100vh;
+    overflow: scroll;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+
+  .file-management-document-folder {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100px;
+    margin-right: 20px;
+    padding: 10px 20px 10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);;
+    cursor: pointer;
+  }
+
+  .file-management-document-folder.selected{
+    border:2px solid #6CA0D7;
+  }
+
+  .file-management-document-folder p{
+    color: #003874
+  }
+  
+  .file-management-folder-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #003874;
+  }
+  
+  .file-management-document-count {
+    /* margin-left: auto; */
+    background-color: #e9effd;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #003874;
+  }
+
+  .file-management-title-contianer{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .file-management-document-count-title {
+    background-color: #003874;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 10px;
+    color: white;
+    margin-top: 5px;;
+  }
+
+  .file-management-document-tags{
+    display: flex;
+    gap:5px;
+    margin-top: 8px;
+  }

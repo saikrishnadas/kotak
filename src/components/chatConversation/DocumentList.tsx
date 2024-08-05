@@ -1,5 +1,7 @@
-import React from 'react';
-import { FaRegCommentDots,FaFilePdf,FaPlus,FaEllipsisH } from 'react-icons/fa';
+"use client"
+
+import React,{useState} from 'react';
+import { FaRegCommentDots,FaFilePdf,FaPlus,FaEllipsisH, FaClosedCaptioning } from 'react-icons/fa';
 import './DocumentList.css';
 import {useDocumentStore} from "@/store"
 
@@ -13,6 +15,7 @@ const documents = [
 
 const DocumentList: React.FC = () => {
   const openDocumentReview = useDocumentStore(state => state.openDocumentReview);
+  const [isSearch, setIsSearch] = useState(true);
   return (
     <aside className="document-list-chat">
       <header className="document-list-chat-header">
@@ -22,6 +25,14 @@ const DocumentList: React.FC = () => {
         </div>
         <FaRegCommentDots className="header-icon" onClick={openDocumentReview}/>
       </header>
+      <div style={{display:"flex",color:"#909090",fontSize:"12px",justifyContent:"space-between",marginBottom:"10px"}}>
+        <p>05 Document Chats</p>
+        <div style={{display:"flex",color:"#909090", gap:"10px"}}>
+          <FaPlus />
+          <FaClosedCaptioning onClick={()=>{setIsSearch(!isSearch)}}/>
+        </div>
+      </div>
+      {isSearch && <input placeholder='search  here' style={{width:"90%",marginBottom:"10px"}}/>}
       <ul>
         {documents.map((doc, index) => (
           <li key={index} className={`document-item ${doc.selected ? 'selected' : ''}`}>

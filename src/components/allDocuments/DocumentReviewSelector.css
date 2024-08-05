@@ -1,0 +1,49 @@
+
+.review-selector {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #FCF9EE;
+    margin-bottom: 10px;
+  }
+  
+  .review-selector p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .options {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .option.selected {
+    border-color: #007bff;
+    background-color: #e7f3ff;
+  }
+  
+  .option input {
+    margin-right: 10px;
+  }
+  
+  .info-icon {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
