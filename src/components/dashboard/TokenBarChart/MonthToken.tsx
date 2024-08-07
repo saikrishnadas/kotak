@@ -1,6 +1,7 @@
 import React from 'react';
 import './token-bar.css';
-import {FaCalendar,FaCircle, FaArrowUp} from "react-icons/fa";
+import {FaCalendar, FaArrowUp} from "react-icons/fa";
+import { BsCheckCircleFill } from "react-icons/bs";
 import { tokens } from '@/data/data';
 
 
@@ -22,7 +23,7 @@ const MonthToken: React.FC = () => {
         </div>
       </div>
       <div className="tick-selection">
-        <FaCircle />
+        <BsCheckCircleFill />
         {tokens?.status}
       </div>
     </div>

@@ -60,10 +60,15 @@
   color: #2b3674;
 }
 
-.table-change-button {
+.table-change-button-top-button {
   border-radius: 10px;
-  border: 1px solid #d1e5fa;
-  padding: 8px 26px;
+  border: none;
+  padding: 4px;
+  height:32px;
+  width: 78px;
+  margin-right:10%;
   font-size: 14px;
   color: #2b3674;
+  cursor: pointer;
 }
+

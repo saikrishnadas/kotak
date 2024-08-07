@@ -10,7 +10,7 @@ import { useReviewTypeStore } from '@/store';
 
 const DocumentReview: React.FC = () => {
   // const [selectedReview, setSelectedReview] = useState<string | null>(null);
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(true);
   const setReviewType = useReviewTypeStore((state) => state.setReviewType)
   const reviewType = useReviewTypeStore((state) => state.reviewType)
 

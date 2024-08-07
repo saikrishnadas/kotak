@@ -4,7 +4,7 @@ import { reviewers } from '@/data/data';
 
 const ReviewerTable: React.FC = () => {
   return (
-    <div className="reviewer-table">
+    <div className="reviewer-table" >
       <table className="styled-table">
         <thead>
           <tr>

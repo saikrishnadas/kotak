@@ -5,6 +5,11 @@ import FeedbackModal from '../modals/FeedbackModal';
 
 const ChatSession: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleClose = () => {
+    setIsModalOpen(false)
+  }
+
   return (
     <section className="chat-session">
       <header className="chat-header">
@@ -116,7 +121,7 @@ const ChatSession: React.FC = () => {
           <FaPaperPlane className="icon" />
         </button>
       </footer>
-      {isModalOpen && <FeedbackModal />}
+      {isModalOpen && <FeedbackModal handleClose={handleClose}/>}
     </section>
   );
 };

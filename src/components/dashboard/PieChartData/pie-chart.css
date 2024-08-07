@@ -11,7 +11,7 @@
 
 .card-pie-chart .chart-header {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: #2b3674;
 }
 
@@ -69,8 +69,9 @@
   height: 8px;
   background-color: #00366f;
   border-radius: 50%;
-  top: 4px;
+  top: 3px;
   left: -11px;
+  margin-right:5px;
 }
 
 .card-pie-chart .cost-value-holder .storage .value-header::before {
@@ -80,8 +81,9 @@
   height: 8px;
   background-color: #e41b23;
   border-radius: 50%;
-  top: 4px;
+  top: 3px;
   left: -11px;
+  margin-right:5px;
 }
 
 .card-pie-chart .cost-value-holder .others .value-header::before {
@@ -91,8 +93,9 @@
   height: 8px;
   background-color: #c6e3f4;
   border-radius: 50%;
-  top: 4px;
+  top: 3px;
   left: -11px;
+  margin-right:5px;
 }
 
 .card-pie-chart .cost-value-holder .value-header {
@@ -116,4 +119,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.dropdown-selector-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-selector-wrapper select {
+  appearance: none;
+  background-color: #FFF;
+  padding: 9px;
+  border-radius: 10px;
+  border: 1px solid #d1e5fa;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #a3aed0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding-right: 24px; /* Space for the icon */
+}
+
+.dropdown-selector-wrapper .drop-arrow-icon {
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+  width: 8px;
+  height: 5px;
+  color: #a3aed0;
+}
+
+.dropdown-selector-wrapper select:focus {
+  outline: none;
+  border-color: #0070f3;
 }

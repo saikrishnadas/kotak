@@ -2,7 +2,7 @@ import React from 'react';
 import { FaPaperPlane } from 'react-icons/fa';
 import "@/components/modals/FeedbackModal.css";
 
-const FeedbackModal: React.FC = () => {
+const FeedbackModal: React.FC<any> = ({handleClose}:any) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
@@ -14,7 +14,7 @@ const FeedbackModal: React.FC = () => {
             <FaPaperPlane className="icon" />
             Submit Feedback
           </button>
-          <button className="cancel-btn">Not Now</button>
+          <button className="cancel-btn" onClick={handleClose}>Not Now</button>
         </div>
       </div>
     </div>

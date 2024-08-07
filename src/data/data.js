@@ -2,7 +2,7 @@ export const costDistribution = [
     {  
         uid: 1,
         id:"all-usage",
-        title: "All Storage",
+        title: "All Usage",
         percentage: 60,
         fill: '#00366F'
     },
@@ -25,7 +25,7 @@ export const costDistribution = [
 export const tokens = {
     count : 15000,
     change: 2.45,
-    status: "On Track"
+    status: "On track"
 }
 
 

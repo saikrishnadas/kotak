@@ -14,7 +14,7 @@ const TopReviewer: React.FC = () => {
 const Header: React.FC = () => (
   <header className="table-button-header">
     <h2 className="table-main-header">Top Reviewer</h2>
-    <button className="app-btn table-change-button">
+    <button className="table-change-button-top-button" style={{width:"100px",backgroundColor:"#f4f7fe",borderRadius:"20px",cursor:"pointer"}}>
       See all
     </button>
   </header>

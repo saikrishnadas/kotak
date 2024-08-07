@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useState} from 'react'
-import { FaRegFolder } from "react-icons/fa";
+import { VscNewFolder } from "react-icons/vsc";
 import "@/components/fileManagment/DocumentList.css"
 
 const folders = [
@@ -18,20 +18,22 @@ function DocumentList() {
   const [isNewFolder, setIsNewFolder] = useState(false);
   return (
     <div className='file-management-documents'>
-        <div className='file-management-add-new' onClick={() => setIsNewFolder(!isNewFolder)}>
-        <FaRegFolder className="file-management-folder-icon" />
+        <div className='file-management-add-new' onClick={() => setIsNewFolder(true)}>
+        <VscNewFolder className="file-management-folder-icon" />
         <p>New Folder</p>
         {
           isNewFolder &&
           <>
           <input placeholder='Folder name'/>
-          <button>Create</button>
+          <div style={{display:"flex",gap:"5px"}}>
+            <button>Create</button>
+          </div>
           </>
         }
         </div>
     {folders.map((folder, idx) => (
         <div key={idx} className={`file-management-document-folder ${folder?.selected ? 'selected' : ''}`}>
-          <FaRegFolder className="file-management-folder-icon" />
+          <VscNewFolder className="file-management-folder-icon" />
           <div className='file-management-title-contianer'>
           <p>{folder.name}</p>
           <div className="file-management-document-count-title">{folder.count}</div>
